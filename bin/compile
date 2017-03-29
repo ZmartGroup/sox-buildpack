@@ -18,5 +18,7 @@ mkdir -p $BUILD_DIR/.heroku/vendor
 
 echo "-----> Install sox"
 tar -xvf `dirname $0`/../vulcan/sox.tar.gz -C $BUILD_DIR/.heroku/vendor
+echo "-----> Install lame"
+tar -xvf `dirname $0`/../vulcan/lame.tar.gz -C $BUILD_DIR/.heroku/vendor
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/app/.heroku/vendor/lib
